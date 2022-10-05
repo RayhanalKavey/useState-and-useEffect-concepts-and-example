@@ -9,8 +9,8 @@ function App() {
     <div className="h-screen flex justify-center items-center bg-gray-100">
       {/* <LessonOne /> */}
       {/* <LessonTwo /> */}
-      <LessonThree />
-      {/* <LessonFour /> */}
+      {/* <LessonThree /> */}
+      <LessonFour />
       {/* <Explain /> */}
     </div>
   );

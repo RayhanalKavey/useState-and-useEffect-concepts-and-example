@@ -1,12 +1,25 @@
 import React, { useState } from "react";
 
 function LessonFour() {
+  const [user, setUser] = useState({
+    name: "Input you name",
+    email: "Use your email",
+  });
+  const handleInput = (event) => {
+    // user[event.target.id] = event.target.value;
+    setUser((current) => {
+      return { ...current, [event.target.id]: event.target.value };
+    });
+  };
+
   return (
     <div className="flex flex-col w-full items-center">
       <div className="p-2 rounded-md shadow-2xl w-full max-w-xl mx-5 mb-10 bg-white">
         <div className=" bg-gradient-to-tr to-purple-100 from-cyan-100 rounded-sm p-5">
-          <h1 className="text-2xl mb-5 font-bold text-gray-800">Name:</h1>
-          <p className="text-gray-700">Email:</p>
+          <h1 className="text-2xl mb-5 font-bold text-gray-800">
+            Name: {user.name}
+          </h1>
+          <p className="text-gray-700">Email: {user.email} </p>
         </div>
       </div>
       <div className="w-full max-w-xl bg-gradient-to-tr to-purple-100 from-cyan-100 p-2 rounded-md shadow-2xl">
@@ -20,6 +33,7 @@ function LessonFour() {
               type="text"
               name="name"
               id="name"
+              onChange={(e) => handleInput(e)}
             />
           </div>
           <div className="flex justify-between items-center">
@@ -31,6 +45,7 @@ function LessonFour() {
               type="text"
               name="email"
               id="email"
+              onChange={(e) => handleInput(e)}
             />
           </div>
         </div>
