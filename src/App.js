@@ -6,11 +6,11 @@ import Explain from "./pages/Explain";
 
 function App() {
   return (
-    <div className='h-screen flex justify-center items-center bg-gray-100'>
+    <div className="h-screen flex justify-center items-center bg-gray-100">
       {/* <LessonOne /> */}
-      {/* <LessonTwo /> */}
+      <LessonTwo />
       {/* <LessonThree /> */}
-      <LessonFour />
+      {/* <LessonFour /> */}
       {/* <Explain /> */}
     </div>
   );
