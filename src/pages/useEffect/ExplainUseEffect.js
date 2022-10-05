@@ -7,6 +7,12 @@ function ExplainUseEffect() {
 
   useEffect(() => {
     console.count("Effect");
+
+    return () => {
+      console.log("Clean korteesi");
+      // cleanup action
+      console.log("Done");
+    };
   }, [toggle]);
 
   return (
