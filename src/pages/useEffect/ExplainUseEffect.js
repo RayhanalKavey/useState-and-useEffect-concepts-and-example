@@ -5,6 +5,10 @@ function ExplainUseEffect() {
 
   console.count("Render");
 
+  useEffect(() => {
+    console.count("Effect");
+  }, [toggle]);
+
   return (
     <div>
       {toggle && <h1>Explain</h1>}
