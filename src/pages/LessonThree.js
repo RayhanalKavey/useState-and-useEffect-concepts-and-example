@@ -10,8 +10,10 @@ function LessonThree() {
     <div className="flex flex-col w-full items-center">
       <div className="p-2 rounded-md shadow-2xl w-full max-w-xl mx-5 mb-10 bg-white">
         <div className=" bg-gradient-to-tr to-purple-100 from-cyan-100 rounded-sm p-5">
-          <h1 className="text-2xl mb-5 font-bold text-gray-800">Name:</h1>
-          <p className="text-gray-700">Email: </p>
+          <h1 className="text-2xl mb-5 font-bold text-gray-800">
+            Name: {name}
+          </h1>
+          <p className="text-gray-700">Email: {email}</p>
         </div>
       </div>
       <div className="w-full max-w-xl bg-gradient-to-tr to-purple-100 from-cyan-100 p-2 rounded-md shadow-2xl">
@@ -25,6 +27,7 @@ function LessonThree() {
               type="text"
               name="name"
               id="name"
+              onChange={(event) => setName(event.target.value)}
             />
           </div>
           <div className="flex justify-between items-center">
@@ -36,6 +39,7 @@ function LessonThree() {
               type="text"
               name="email"
               id="email"
+              onChange={(event) => setEmail(event.target.value)}
             />
           </div>
         </div>

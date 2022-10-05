@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="h-screen flex justify-center items-center bg-gray-100">
       {/* <LessonOne /> */}
-      <LessonTwo />
-      {/* <LessonThree /> */}
+      {/* <LessonTwo /> */}
+      <LessonThree />
       {/* <LessonFour /> */}
       {/* <Explain /> */}
     </div>

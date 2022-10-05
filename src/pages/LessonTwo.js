@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 function LessonTwo() {
   const [post, setPost] = useState({});
 
-  console.log(post);
+  // console.log(post);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/posts/1")
