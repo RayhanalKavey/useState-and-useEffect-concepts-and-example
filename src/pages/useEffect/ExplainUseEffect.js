@@ -27,5 +27,5 @@ function ExplainUseEffect() {
     </div>
   );
 }
-
+// anonymous
 export default ExplainUseEffect;
