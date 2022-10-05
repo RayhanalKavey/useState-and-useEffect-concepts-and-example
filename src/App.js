@@ -18,8 +18,8 @@ function App() {
       {/* <Explain /> */}
       {/* ParT useEffect */}
       {/* <ExplainUseEffect></ExplainUseEffect> */}
-      <LessonOneUseEffect></LessonOneUseEffect>
-      {/* <LessonTwoUseEffect></LessonTwoUseEffect> */}
+      {/* <LessonOneUseEffect></LessonOneUseEffect> */}
+      <LessonTwoUseEffect></LessonTwoUseEffect>
     </div>
   );
 }
